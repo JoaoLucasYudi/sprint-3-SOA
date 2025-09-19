@@ -1,12 +1,11 @@
 package br.com.fiap.sprint.api_gestao_contas.service;
 
-// Pacote: com.seupacote.seuprojeto.service
+
 
 import br.com.fiap.sprint.api_gestao_contas.dto.TarefaRequestDTO;
 import br.com.fiap.sprint.api_gestao_contas.dto.TarefaResponseDTO;
 import br.com.fiap.sprint.api_gestao_contas.model.Tarefa;
 import br.com.fiap.sprint.api_gestao_contas.repository.TarefaRepository;
-// Importe a exceção personalizada que criaremos a seguir
 import br.com.fiap.sprint.api_gestao_contas.exception.RecursoJaExistenteException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

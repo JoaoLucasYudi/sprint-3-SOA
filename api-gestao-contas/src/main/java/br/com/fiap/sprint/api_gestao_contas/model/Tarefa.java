@@ -1,11 +1,11 @@
 package br.com.fiap.sprint.api_gestao_contas.model;
 
 import jakarta.persistence.*;
-import lombok.Data; // Do Lombok, para gerar getters, setters, etc.
+import lombok.Data;
 
 @Entity
 @Table(name = "tarefas")
-@Data // Gera getters, setters, toString, equals e hashCode
+@Data
 public class Tarefa {
 
     @Id
@@ -20,6 +20,4 @@ public class Tarefa {
 
     @Column(nullable = false)
     private boolean concluida;
-
-    // Construtor, getters e setters são gerados pelo Lombok
 }
