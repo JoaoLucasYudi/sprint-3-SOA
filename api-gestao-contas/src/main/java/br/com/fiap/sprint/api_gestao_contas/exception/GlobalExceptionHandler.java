@@ -36,4 +36,9 @@ public class GlobalExceptionHandler {
         // Cria um mapa simples para a mensagem de erro
         return ResponseEntity.status(HttpStatus.CONFLICT).body(Map.of("erro", ex.getMessage()));
     }
+
+    @ExceptionHandler(ValidacaoNegocioException.class)
+    public ResponseEntity<Map<String, String>> handleValidacaoNegocioException(ValidacaoNegocioException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("erro", ex.getMessage()));
+    }
 }
